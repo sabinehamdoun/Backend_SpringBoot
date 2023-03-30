@@ -1,4 +1,7 @@
 package com.example.project.Repositories;
 
-public interface ExpenseTypeRepository {
+import com.example.project.Entity.ExpenseType;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ExpenseTypeRepository extends JpaRepository<ExpenseType, Integer> {
 }
